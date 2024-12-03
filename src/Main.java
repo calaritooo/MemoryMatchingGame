@@ -5,6 +5,14 @@ public class Main {
 
         System.out.println("Welcome to the game 'Memory Matching'!");
 
+        initializeGrid();
+        String selectedTheme = selectTheme();
+        System.out.println("You have selected " + selectedTheme);
+        shuffleAndPopulateGrid(selectedTheme);
+        displayGrid();
+        int matchedPairs = 0;
+
+
     }
 
     private static final int GRID_SIZE = 6;
